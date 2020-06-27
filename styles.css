@@ -1,10 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    position:relative;
   }
   
   .topnav {
-    position: relative;
+    position: fixed;
+    top:0;
     background-color:white;
     width:100%;
     display:flex;

@@ -20,9 +20,9 @@
     <a href="#news">About</a>
     <a href="#contact">Experience</a>
     <a href="#about">Contact</a>
-    <a href="resume.html">CV</a>
+    <a href="resume.html">Resume</a>
   </div>
-  <div class="landing">
+  <div class="landing" id="land">
     <img src="code.jpg">
     <div class=profile>
       <img src="profile.jpg">
@@ -45,6 +45,12 @@
       }
     }
   </script>
+  <script>
+    document.getElementById("land").style.marginTop=document.getElementById("myTopnav").clientHeight+"px";
+  </script>
+
+
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
