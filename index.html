@@ -12,13 +12,13 @@
 <body>
 
   <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
     <a href="#home">Home</a>
     <a href="#news">About</a>
     <a href="#contact">Work</a>
     <a href="#about">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
   <div class="landing">
     <img src="code.jpg">
@@ -37,7 +37,7 @@
   <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
+      if (x.className == "topnav") {
         x.className += " responsive";
       } else {
         x.className = "topnav";
