@@ -98,7 +98,7 @@ body {
 
   .resume >iframe{
     width:100%;
-    height:50vw;
+    height:80vw;
   }
   
   @media screen and (max-width: 600px) {
@@ -140,7 +140,7 @@ body {
         width:auto;
     }
     .resume >iframe{
-        height:120vw;
+        height:150vw;
     }
     .resume{
         width:100%;
