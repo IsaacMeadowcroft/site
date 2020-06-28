@@ -105,41 +105,63 @@ body {
   }
 
   .about{
-      margin-top:10%;
+      height:100%;
+      margin-top:3%;
       display:flex;
       flex-direction: column;
       align-items:center;
   }
 
+  .item{
+    height:100%;
+    margin-top:3%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+
   .section{
+      width:100%;
       display: flex;
-      justify-self: center;
+      justify-content: center;
+      align-items: center;
       background-color:lightgrey;
-      padding-right: 2%;
-      padding-left:2%;
-      padding-top: 1%;
+      padding: 2%;
       font-size: 2vw;
-      border-top-right-radius:40px;
-      border-top-left-radius:40px;
       font-family: 'Heebo', sans-serif;
       text-transform: uppercase;
   }
 
   .text{
+      position: relative;
       display:flex;
       justify-content: space-evenly;
       align-items: center;
       background-color: white;
       width:100%;
       font-family: 'Heebo', sans-serif;
-      padding-top:10%;
-      padding-bottom: 10%;
-      background-color:lightgrey;
+      background-color:rgb(238, 238, 238);
   }
 
   .text > img{
-      width:20vw;
-      border-radius: 20px;
+      display: flex;
+      width:30%;
+      margin-right: auto;
+  }
+
+  .bio {
+    display:flex;
+    position: absolute;
+    width:50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:80%;
+    right:0;
+  }
+
+  .info{
+    font-size: 1.5vw;;
+    font-family: 'Heebo', sans-serif;
   }
 
   .icons{
@@ -159,6 +181,10 @@ body {
 
   .icons > a > i {
     font-size:12vw;
+  }
+
+  .icons > a > p{
+      color:black;
   }
 
   .icons > a:hover{
@@ -206,5 +232,8 @@ body {
     }
     .resume{
         width:100%;
+    }
+    .info{
+        font-size: 2.5vw;;
     }
 }
