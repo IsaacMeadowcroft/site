@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -16,23 +16,35 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home">Home</a>
-    <a href="#news">About</a>
-    <a href="#contact">Experience</a>
-    <a href="#about">Contact</a>
-    <a href="resume.html">Resume</a>
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
   </div>
   <div class="landing" id="land">
     <img src="code.jpg">
+    <div class="name"></div>
     <div class=profile>
       <img src="profile.jpg">
       <div class="links">
-        <a href="https://www.linkedin.com/in/isaac-meadowcroft-grijalva">LinkedIn</a>
-        <a href="">GitHub</a>
+        Isaac Meadowcroft
       </div>
     </div>
   </div>
-  <div class="rest">
+  <div class="icons">
+    <p>LinkedIn</p>
+    <p>GitHub</p>
+    <p>FaceBook</p>
+  </div>
+  <div class="about" id="about">
+    <p>About</p>
+    <div class="text">
+      Hi, my name is Isaac Meadowcroft. I am a passionate coder and McGill Computer Science student. I hope to one day be a Software Engineer working on cutting edge technology.
+    </div>
+  </div>
+  <div class="resume" id="resume">
+    <iframe src="https://drive.google.com/file/d/1IltQfFWtyDYsUAu-sOEVZvN35vvCxE_P/preview"></iframe>
   </div>
 
   <script>
@@ -46,7 +58,9 @@
     }
   </script>
   <script>
-    document.getElementById("land").style.marginTop=document.getElementById("myTopnav").clientHeight+"px";
+    document.getElementById("land").style.marginTop = document.getElementById("myTopnav").clientHeight + "px";
+    document.getElementById("resume").style.paddingTop = document.getElementById("myTopnav").clientHeight + "px";
+    document.getElementById("about").style.paddingTop = document.getElementById("myTopnav").clientHeight + "px";
   </script>
 
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -40,15 +42,16 @@ body {
 
   .landing > img{
       width:100%;
-      max-height: 600px;
-      filter:grayscale(100%);
+      max-height: 700px;
+      filter:grayscale(0%) brightness(50%);
       border-bottom: 2px solid black;
+
   }
 
   .profile{
-    height:80%;
+      height:80%;
       width:100%;
-      top:10%;
+      top:25%;
       position:absolute;
       display: flex;
       flex-direction: column;
@@ -56,10 +59,21 @@ body {
       align-items: center;
   }
 
+  .name{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height:35%;
+    border-top: 2px white solid;
+    background-color: white;
+  }
+
   .profile > img{
       width: 30%;
       border-radius: 50%;
       border: 2px white solid;
+      max-width: 300px;
+      max-height: 300px;
   }
 
   .links{
@@ -67,19 +81,10 @@ body {
       align-items: center;
       justify-content: space-evenly;
       padding:2%;
-      margin:2%;
-      background-color: white;
-      width:30%;
-      border-radius: 50px;
-  }
-
-  .links a{
-      font-family: 'Lato',sans-serif;
-      color:black;
-      margin: 0;
-      font-size:2vw;
-      display:block;
-      text-decoration: none;
+      width:100%;
+      font-size:3vw;
+      font-family: 'Heebo', sans-serif;
+      text-transform: uppercase;
   }
 
   .links a:hover{
@@ -101,6 +106,25 @@ body {
   .resume >iframe{
     width:100%;
     height:80vw;
+  }
+
+  .about{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      background-color: rgb(231, 229, 229);
+      padding-bottom: 100px;
+  }
+
+  .about > p{
+      font-size: 30px;
+  }
+
+  .icons{
+      background-color:white;
+      display: flex;
+      justify-content: space-evenly;
   }
   
   @media screen and (max-width: 600px) {
