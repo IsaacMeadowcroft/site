@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap');
 
 body {
     margin: 0;
@@ -21,8 +21,8 @@ body {
     display: block;
     color:black;
     text-align: center;
-    width:100%;
     padding: 18px 16px;
+    width:100%;
     text-decoration: none;
     font-size: 17px;
   }
@@ -43,29 +43,19 @@ body {
   .landing > img{
       width:100%;
       max-height: 700px;
-      filter:grayscale(0%) brightness(50%);
+      filter: brightness(30%);
       border-bottom: 2px solid black;
-
   }
 
   .profile{
       height:80%;
       width:100%;
-      top:25%;
+      top:10%;
       position:absolute;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
-
-  .name{
-    position:absolute;
-    bottom:0;
-    width: 100%;
-    height:35%;
-    border-top: 2px white solid;
-    background-color: white;
   }
 
   .profile > img{
@@ -80,18 +70,16 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      padding:2%;
+      padding:3%;
       width:100%;
       font-size:3vw;
       font-family: 'Heebo', sans-serif;
       text-transform: uppercase;
-  }
-
-  .links a:hover{
-      color: #a2a7a2;
+      color: white;
   }
 
   .rest{
+      width:100%;
       height:1000px;
   }
 
@@ -111,20 +99,58 @@ body {
   .about{
       display:flex;
       flex-direction: column;
-      justify-content: center;
       align-items:center;
-      background-color: rgb(231, 229, 229);
       padding-bottom: 100px;
   }
 
-  .about > p{
-      font-size: 30px;
+  .section{
+      display: flex;
+      justify-self: start;
+      background-color:lightgrey;
+      padding-right: 2%;
+      padding-left:2%;
+      padding-top: 1%;
+      font-size: 2vw;
+      border-top-right-radius:40px;
+      border-top-left-radius:40px;
+      font-family: 'Heebo', sans-serif;
+      text-transform: uppercase;
+  }
+
+  .text{
+      display:flex;
+      align-items: center;
+      background-color: white;
+      width:100%;
+      font-family: 'Heebo', sans-serif;
+      padding-top:10%;
+      background-color:lightgrey;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+  }
+
+  .text > img{
+      width:20vw;
   }
 
   .icons{
+      width:100%;
+      margin-top: 7%;
       background-color:white;
       display: flex;
       justify-content: space-evenly;
+  }
+
+  .icons > div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(167, 166, 166);
+  }
+
+  .icons > div > i {
+    font-size:10vw;
   }
   
   @media screen and (max-width: 600px) {
@@ -143,11 +169,9 @@ body {
     .profile > img{
         width: 40%;
     }
-    .links > a{
-        font-size: 3vw;
-    }
     .links{
         height:20%;
+        font-size: 5vw;
     }
   }
   
