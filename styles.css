@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
 
 body {
     margin: 0;
@@ -42,15 +42,15 @@ body {
 
   .landing > img{
       width:100%;
-      max-height: 700px;
-      filter: brightness(30%);
+      max-height: 600px;
+      filter: brightness(40%);
       border-bottom: 2px solid black;
   }
 
   .profile{
       height:80%;
       width:100%;
-      top:10%;
+      top:20%;
       position:absolute;
       display: flex;
       flex-direction: column;
@@ -66,16 +66,24 @@ body {
       max-height: 300px;
   }
 
+  .name{
+      position:absolute;
+      width:100%;
+      bottom:0%;
+      height:48%;
+      background-color: white;
+  }
+
   .links{
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      padding:3%;
+      padding:30px;
       width:100%;
-      font-size:3vw;
+      font-size:2.5vw;
       font-family: 'Heebo', sans-serif;
       text-transform: uppercase;
-      color: white;
+      color:black;
   }
 
   .rest{
@@ -97,15 +105,15 @@ body {
   }
 
   .about{
+      margin-top:10%;
       display:flex;
       flex-direction: column;
       align-items:center;
-      padding-bottom: 100px;
   }
 
   .section{
       display: flex;
-      justify-self: start;
+      justify-self: center;
       background-color:lightgrey;
       padding-right: 2%;
       padding-left:2%;
@@ -119,38 +127,42 @@ body {
 
   .text{
       display:flex;
+      justify-content: space-evenly;
       align-items: center;
       background-color: white;
       width:100%;
       font-family: 'Heebo', sans-serif;
       padding-top:10%;
+      padding-bottom: 10%;
       background-color:lightgrey;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
   }
 
   .text > img{
       width:20vw;
+      border-radius: 20px;
   }
 
   .icons{
       width:100%;
-      margin-top: 7%;
-      background-color:white;
       display: flex;
       justify-content: space-evenly;
   }
 
-  .icons > div{
+  .icons > a{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     color:rgb(167, 166, 166);
+    text-decoration:none;
   }
 
-  .icons > div > i {
-    font-size:10vw;
+  .icons > a > i {
+    font-size:12vw;
+  }
+
+  .icons > a:hover{
+      color:black;
   }
   
   @media screen and (max-width: 600px) {
