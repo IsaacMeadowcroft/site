@@ -4,7 +4,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -101,64 +100,14 @@
   </div>
 
 
-  <script>
-    topNav = document.getElementById("myTopnav");
+  <script src="navbar.js"></script>
 
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className == "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-
-    if ($(window).width() > 600) {
-      topNav.style.backgroundColor = "transparent";
-      topNav.style.border = "none";
-      $(".topnav a").hover(function () {
-        $(this).css("background-color", "transparent");
-        $(this).css("color", "white");
-      });
-      $(".topnav a").mouseout(function () {
-        $(this).css("color", "black");
-      });
-      $(window).scroll(function () {
-        scrollPosition = $(this).scrollTop();
-        if (scrollPosition >= 100) {
-          topNav.style.backgroundColor = "white";
-          topNav.style.borderBottom = "1px solid black";
-          $(".topnav a").css("color", "black");
-          $(".topnav a").hover(function () {
-            $(this).css("background-color", "lightgrey");
-            $(".topnav a").css("color", "black");
-          });
-          $(".topnav a").mouseout(function () {
-            $(this).css("background-color", "transparent");
-          });
-        } else {
-          topNav.style.backgroundColor = "transparent";
-          topNav.style.border = "none";
-          $(".topnav a").hover(function () {
-            $(this).css("background-color", "transparent");
-            $(this).css("color", "white");
-          });
-          $(".topnav a").mouseout(function () {
-            $(this).css("color", "black");
-          });
-        }
-      });
-    }
-
-  </script>
   <script>
     document.getElementById("land").style.paddingTop = document.getElementById("myTopnav").clientHeight + "px";
     document.getElementById("resume").style.paddingTop = document.getElementById("myTopnav").clientHeight + "px";
     document.getElementById("about").style.paddingTop = document.getElementById("myTopnav").clientHeight + "px";
     document.getElementById("experience").style.paddingTop = document.getElementById("myTopnav").clientHeight + "px";
   </script>
-
-
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
