@@ -1,5 +1,17 @@
 topNav = document.getElementById("myTopnav");
 
+
+if ($(window).width() > 600 && $(this).scrollTop() < 100) {
+    transNav();
+} else {
+    whiteNav();
+}
+
+
+function toHome() {
+    $(".topnav a").css("background-color", "transparent");
+}
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className == "topnav") {
