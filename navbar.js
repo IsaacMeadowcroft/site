@@ -33,18 +33,22 @@ function whiteNav() {
         $(this).css("background-color", "transparent");
     });
 }
+
 $(window).on('resize', function (event) {
-    if ($(window).width() > 600) {
+    if ($(window).width() > 600 && $(this).scrollTop() < 100) {
         transNav();
-        $(window).scroll(function () {
-            scrollPosition = $(this).scrollTop();
-            if (scrollPosition >= 100) {
-                whiteNav();
-            } else {
-                transNav();
-            }
-        });
     } else {
         whiteNav();
+    }
+});
+
+$(window).on('scroll', function () {
+    if ($(window).width() > 600) {
+        scrollPosition = $(this).scrollTop();
+        if (scrollPosition >= 100) {
+            whiteNav();
+        } else {
+            transNav();
+        }
     }
 });
