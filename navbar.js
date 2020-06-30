@@ -9,7 +9,7 @@ function myFunction() {
     }
 }
 
-if ($(window).width() > 600) {
+function transNav() {
     topNav.style.backgroundColor = "transparent";
     topNav.style.border = "none";
     $(".topnav a").hover(function () {
@@ -19,29 +19,32 @@ if ($(window).width() > 600) {
     $(".topnav a").mouseout(function () {
         $(this).css("color", "black");
     });
-    $(window).scroll(function () {
-        scrollPosition = $(this).scrollTop();
-        if (scrollPosition >= 100) {
-            topNav.style.backgroundColor = "white";
-            topNav.style.borderBottom = "1px solid black";
-            $(".topnav a").css("color", "black");
-            $(".topnav a").hover(function () {
-                $(this).css("background-color", "lightgrey");
-                $(".topnav a").css("color", "black");
-            });
-            $(".topnav a").mouseout(function () {
-                $(this).css("background-color", "transparent");
-            });
-        } else {
-            topNav.style.backgroundColor = "transparent";
-            topNav.style.border = "none";
-            $(".topnav a").hover(function () {
-                $(this).css("background-color", "transparent");
-                $(this).css("color", "white");
-            });
-            $(".topnav a").mouseout(function () {
-                $(this).css("color", "black");
-            });
-        }
+}
+
+function whiteNav() {
+    topNav.style.backgroundColor = "white";
+    topNav.style.borderBottom = "1px solid black";
+    $(".topnav a").css("color", "black");
+    $(".topnav a").hover(function () {
+        $(this).css("background-color", "lightgrey");
+        $(".topnav a").css("color", "black");
+    });
+    $(".topnav a").mouseout(function () {
+        $(this).css("background-color", "transparent");
     });
 }
+$(window).on('resize', function (event) {
+    if ($(window).width() > 600) {
+        transNav();
+        $(window).scroll(function () {
+            scrollPosition = $(this).scrollTop();
+            if (scrollPosition >= 100) {
+                whiteNav();
+            } else {
+                transNav();
+            }
+        });
+    } else {
+        whiteNav();
+    }
+});
