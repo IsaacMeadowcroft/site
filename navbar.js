@@ -2,7 +2,7 @@ topNav = document.getElementById("myTopnav");
 
 
 if ($(window).width() > 600 && $(this).scrollTop() < 100) {
-    transNav();
+    blackNav();
 } else {
     whiteNav();
 }
@@ -22,7 +22,7 @@ function myFunction() {
     }
 }
 
-function transNav() {
+function blackNav() {
     $(".topnav a").css("color", "white");
     topNav.style.backgroundColor = "black";
     topNav.style.border = "none";
@@ -51,7 +51,7 @@ function whiteNav() {
 
 $(window).on('resize', function (event) {
     if ($(window).width() > 600 && $(this).scrollTop() < 100) {
-        transNav();
+        blackNav();
     } else {
         whiteNav();
     }
@@ -63,7 +63,7 @@ $(window).on('scroll', function () {
         if (scrollPosition >= 100) {
             whiteNav();
         } else {
-            transNav();
+            blackNav();
             $(".topnav a").css("background-color", "transparent");
         }
     }
