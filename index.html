@@ -29,7 +29,7 @@
         <div class="codes">
           <img src="code2.jpg" class="code">
         </div>
-        <img src="glasses.jpg" class="jenny">
+        <img src="profile.jpg" class="jenny">
       </div>
       <div class="block">
         <div class="name">
@@ -44,7 +44,7 @@
     </div>
     <div class="text">
       <div class="glasses-container">
-        <img src="profile.jpg">
+        <img src="glasses.jpg">
       </div>
       <div class="bio">
         <div class="info">
@@ -58,40 +58,126 @@
     <div class="section">
       Experience
     </div>
-    <div class="timeline1">
-      <div class="timespot">
-        <div class="point">
-          <img src="ericsson.png">
+    <section id="cd-timeline" class="cd-container">
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
         </div>
-        <div class="pre">
-          <p>Ericsson Software Engineer Intern</p>
-        </div>
-        <div class="event">
-          <p>2020</p>
-        </div>
-      </div>
-      <div class="timespot">
-        <div class="point">
-          <img src="mcgill.png" id="mcgill">
-        </div>
-        <div class="pre">
-          <p>2018</p>
-        </div>
-        <div class="event">
-          <p>2018</p>
-        </div>
-      </div>
-      <div class="timespot">
-        <div class="point"></div>
-        <div class="pre">
-          <p>2018</p>
-        </div>
-        <div class="event">
-          <p>2018</p>
-        </div>
-      </div>
-      <div class="line"></div>
-    </div>
+
+        <div class="cd-timeline-content">
+          <div class="job-wrapper">
+            <img src="ericsson.png">
+            <div>Ericsson</div>
+          </div>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-title">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              Software Engineer Intern
+            </span>
+            <span class="timeline-content-info-date">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              May - August, 2020
+            </span>
+          </div>
+          <ul>
+            <li>Orchestrated zero downtime database upgrade using logical replication</li>
+            <li>Increased security by adding vulnerability scan to Jenkins pipeline</li>
+            <li>Wrote Bash, Batch, Python and Ansible Playboook scripts</li>
+          </ul>
+          <!--
+          <p>Working alongside the designer team implementing the designs, also developing custom solutions to address
+            team necessities.</p>
+          <ul class="content-skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Wordpress</li>
+          </ul>-->
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <div class="job-wrapper">
+            <img src="mcgill.png" id="mcgill">
+            <div>McGill</div>
+          </div>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-title">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              CS Teaching Assistant
+            </span>
+            <span class="timeline-content-info-date">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              January - May, 2020
+            </span>
+          </div>
+          <ul>
+            <li>Intro to Computer Science T.A.-ship, supervised by Prof. Giulia Alberini</li>
+            <li>Held weekly office hours discussing Big O notation and time complexity</li>
+            <li>Created quiz questions and corrected exams</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <div class="job-wrapper" id="mcwics-wrapper">
+            <img src="mcwics.png" id="mcwics">
+            <div>McWiCS Hackathon</div>
+          </div>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-title">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              Participant
+            </span>
+            <span class="timeline-content-info-date">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              January 2020
+            </span>
+          </div>
+          <ul>
+            <li>Launched a web-application to help McGill students monitor their health</li>
+            <li>Parsed data from Nutritionix API to display users’ daily macronutrient counts</li>
+            <li>Project link: <a href="https://devpost.com/software/mcfitt">https://devpost.com/software/mcfitt</a></li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <div class="job-wrapper">
+            <img src="mcgill.png" id="mcgill">
+            <div>McGill</div>
+          </div>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-title">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              Student Researcher
+            </span>
+            <span class="timeline-content-info-date">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              August 2019 - May 2020
+            </span>
+          </div>
+          <ul>
+            <li>Worked in Prof. Joseph Vybihal’s lab as part of his Drone Swarm project</li>
+            <li>Made a drone blueprint and constructed drone using Arduino Nano</li>
+            <li>Programmed Arduino drone to detect and avoid objects</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+    </section> <!-- cd-timeline -->
   </div>
   <div class="item" id="resume">
     <div class="section">
@@ -100,130 +186,6 @@
     <div class="resume">
       <iframe src="https://drive.google.com/file/d/1IltQfFWtyDYsUAu-sOEVZvN35vvCxE_P/preview"></iframe>
     </div>
-  </div>
-  <div class=item id="timeline">
-    <div class="section">
-      Timeline
-    </div>
-    <div class="container">
-      <ul class="timeline">
-          <li>
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <img class="img-responsive" />
-                
-              </div>
-              <div class="timeline-body">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                
-              </div>
-              
-              <div class="timeline-footer">
-                  <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  <a><i class="glyphicon glyphicon-share"></i></a>
-                  <a class="pull-right">Continuar Lendo</a>
-              </div>
-            </div>
-          </li>
-          
-          <li  class="timeline-inverted">
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <img class="img-responsive" />
-                
-              </div>
-              <div class="timeline-body">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-               
-              </div>
-              
-              <div class="timeline-footer">
-                  <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  <a><i class="glyphicon glyphicon-share"></i></a>
-                  <a class="pull-right">Continuar Lendo</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <img class="img-responsive"/>
-                
-              </div>
-              <div class="timeline-body">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                
-              </div>
-              
-              <div class="timeline-footer">
-                  <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  <a><i class="glyphicon glyphicon-share"></i></a>
-                  <a class="pull-right">Continuar Lendo</a>
-              </div>
-            </div>
-          </li>
-          
-          <li  class="timeline-inverted">
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-body">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                
-              </div>
-              
-              <div class="timeline-footer">
-                  <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  <a><i class="glyphicon glyphicon-share"></i></a>
-                  <a class="pull-right">Continuar Lendo</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <img class="img-responsive"/>
-                
-              </div>
-              <div class="timeline-body">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                
-              </div>
-              
-              <div class="timeline-footer">
-                  <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  <a><i class="glyphicon glyphicon-share"></i></a>
-                  <a class="pull-right">Continuar Lendo</a>
-              </div>
-            </div>
-          </li>
-          
-          <li  class="timeline-inverted">
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <img class="img-responsive" />
-                
-              </div>
-              <div class="timeline-body">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                
-              </div>
-              
-              <div class="timeline-footer primary">
-                  <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  <a><i class="glyphicon glyphicon-share"></i></a>
-                  <a class="pull-right">Continuar Lendo</a>
-              </div>
-            </div>
-          </li>
-          
-          <li class="clearfix" style="float: none;"></li>
-      </ul>
-  </div>
   </div>
   <div class=item id="contact">
     <div class="section">
