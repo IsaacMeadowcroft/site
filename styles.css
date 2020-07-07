@@ -382,7 +382,7 @@ body {
     width: 4px;
     background: #7E57C2;
   }
-  @media only screen and (min-width: 1170px) {
+  @media only screen and (min-width: 770px) {
     #cd-timeline {
     }
     #cd-timeline::before {
@@ -406,7 +406,7 @@ body {
   .cd-timeline-block:last-child {
     margin-bottom: 0;
   }
-  @media only screen and (min-width: 1170px) {
+  @media only screen and (min-width: 770px) {
     .cd-timeline-block {
       margin: 4em 0;
     }
@@ -430,7 +430,7 @@ body {
   .cd-timeline-img {
     background: #673AB7;
   }
-  @media only screen and (min-width: 1170px) {
+  @media only screen and (min-width: 770px) {
     .cd-timeline-img {
       width: 30px;
       height: 30px;
@@ -543,7 +543,7 @@ body {
       font-size: 0.875rem;
     }
   }
-  @media only screen and (min-width: 1170px) {
+  @media only screen and (min-width: 770px) {
     .cd-timeline-content {
       color: white;
       margin-left: 0;
