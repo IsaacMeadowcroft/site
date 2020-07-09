@@ -24,12 +24,12 @@ function myFunction() {
 
 function blackNav() {
     $(".topnav a").css("color", "white");
-    topNav.style.backgroundColor = "black";
+    topNav.style.backgroundColor = "transparent";
     topNav.style.border = "none";
     $(".topnav a").hover(function () {
         $(".topnav a").css("color", "white");
-        $(this).css("background-color", "black");
-        $(this).css("color", "rgb(74, 74, 128)");
+        $(this).css("background-color", "transparent");
+        $(this).css("color", "rgb(114, 99, 114)");
     });
     $(".topnav a").mouseout(function () {
         $(this).css("color", "white");
