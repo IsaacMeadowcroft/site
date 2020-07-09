@@ -47,7 +47,7 @@ body {
       max-height: 600px;
       border-radius: 0px;
       z-index: 0;
-      filter: invert(10%) sepia(77%) saturate(415%) hue-rotate(202deg) brightness(44%) contrast(89%) blur(2px);
+      filter: invert(15%) sepia(77%) saturate(515%) hue-rotate(202deg) brightness(34%) contrast(89%);
   }
 
   .codes{
@@ -57,6 +57,7 @@ body {
   }
 
   .image-container{
+    background-color: rgb(114, 99, 114);
     border-top: 8px solid rgb(114, 99, 114);
     margin-left:0%;
     margin-right:0%;
@@ -79,8 +80,6 @@ body {
     bottom:0;
     width:100%;
     height:49%;
-    border-width: 8%;
-    border-top: solid rgb(114, 99, 114);
     background-color: white;
   }
 
@@ -148,13 +147,6 @@ body {
       font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
   }
 
-  .about > .section >.section-background{
-    box-shadow: 0 -4px 4px 0px black inset;
-  }
-
-  #experience > .section >.section-background{
-    box-shadow: 0 4px 4px 0px black inset;
-  }
 
   .section-background{
     position:absolute;
@@ -191,6 +183,26 @@ body {
       padding:0%;
   }
 
+  .cv-container{
+    display: flex;
+      justify-content: center;
+      width:30%;
+      margin-left: auto;
+      overflow: hidden;
+      position:relative;
+      padding:0%;
+  }
+
+  .cv-container > img{
+    width:100%;
+    height:100%;
+    border-radius: 0px;
+    border:0px solid black;
+    background-color: rgb(23, 23, 63);
+    padding:0%;
+    filter: brightness(90%);
+  }
+
   .glasses-container > img{
       width:100%;
       height:100%;
@@ -210,6 +222,20 @@ body {
     right:0;
   }
 
+  .cv-bio{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    width:70%;
+    height:100%;
+    left:0;
+  }
+
+  .resume >iframe{
+    width:100%;
+    height:20vw;
+  }
+
   .info{
     font-size: 1.5vw;;
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -220,9 +246,11 @@ body {
       width:100%;
       display: flex;
       padding-top: 3%;
+      padding-bottom: 3%;
+      border-bottom: 8px solid rgb(114, 99, 114);
       justify-content: space-around;
       bottom:0px;
-      color:rgb(131, 115, 131);
+      color:rgb(163, 144, 163);
       background-image: linear-gradient(to right, rgb(69, 69, 114),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
   }
 
@@ -233,6 +261,7 @@ body {
     justify-content: space-around;
     align-items: center;
     text-decoration:none;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
   }
 
   .icons > a > i {
@@ -240,7 +269,7 @@ body {
   }
 
   .icons > a:hover{
-    color:rgb(196, 188, 207);
+    color:white;
   }
 
   .job-wrapper{
@@ -294,11 +323,6 @@ body {
       color:white;
   }
 
-  .resume >iframe{
-    width:100%;
-    height:80vw;
-  }
-
   
   @media screen and (max-width: 600px) {
     .topnav a {display: none;}
@@ -323,7 +347,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height:30%;
+        height:50%;
     }
 
     .name > p{
@@ -331,7 +355,7 @@ body {
     }
 
     .jenny{
-        width:40%;
+        width:30%;
     }
   }
   
@@ -342,6 +366,9 @@ body {
     .topnav.responsive a {
       display: block;
       color:white;
+    }
+    #myTopnav.topnav{
+      background-color: red;
     }
     .topnav.responsive a:first-child{
         margin-left:auto;
@@ -366,8 +393,11 @@ body {
     .icons > a > i {
         font-size:8vw;
     }
-
-    @media screen and (max-width:400px){
+    .section{
+      height:70px;
+    }
+    .section > p{
+      font-size: 3vw;;
     }
 }
 
@@ -392,6 +422,8 @@ body {
   
   
   #cd-timeline {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     position: relative;
     padding: 2em 0;
   }
