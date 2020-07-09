@@ -219,7 +219,7 @@ body {
   .icons{
       width:100%;
       display: flex;
-      padding-top: 10%;
+      padding-top: 3%;
       justify-content: space-around;
       bottom:0px;
       color:rgb(131, 115, 131);
