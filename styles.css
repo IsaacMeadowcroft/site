@@ -176,8 +176,10 @@ body {
   }
 
   .cv-container{
+      position: relative;
       display: flex;
       justify-content: center;
+      align-items: center;
       width:94%;
       margin-left: auto;
       overflow: hidden;
@@ -185,34 +187,73 @@ body {
       padding:3%;
   }
 
-  .cv-container-icon{
-    display: flex;
+  .button-container{
+    width:50%;
+    display:flex;
+    justify-content: flex-end;
     align-items: center;
   }
 
+  .button-container2{
+     visibility: hidden;
+  }
+
+  .cv-container-icons{
+    position: absolute;
+    height:50%;
+    padding-right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cv-container-icon{
+    display: flex;
+    align-items: center;
+    background-color: rgb(114, 99, 114);
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+
+  .cv-container-icon:hover{
+    background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60));
+  }
+
   .cv-container-icon div{
-    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    width:25px;
-    height:25px;
+    width:30px;
+    height:30px;
+    background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60));
   }
 
   .cv-container-icon div i{
+     color:white;
      padding:5%;
-     background-color: lightgrey;
+  }
+
+  .cv-container-icon > p{
+    color:white;
+    padding-left:7px;
+    padding-right:7px;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
   }
 
   .resume{
      display:flex;
-     justify-content: flex-end;
+     justify-content: flex-start;
      margin-left: auto;
-     background-color: lightcoral;
+     width:50%;
   }
 
   .resume > img{
     height:300px;
-    border:1px solid black;
-    border-radius: 7px;
+    border:2px solid rgb(55, 55, 92);
+    border-radius: 15px;
   }
 
 
@@ -331,6 +372,9 @@ body {
         color:white;
         font-size: 6vw;
     }
+    .resume >img {
+      height:200px;
+    }
     
     .fab{
         font-size:8vw;
@@ -397,6 +441,74 @@ body {
     .section{
       height: 14vw;
     }
+    .button-container{
+      display: none;
+    }
+    .button-container2{
+      top:30%;
+      position:absolute;
+      height: 100%;
+      width:100%;
+      visibility: visible;
+      display: flex;
+      justify-content: center;
+    }
+    .cv-text{
+      overflow: auto;
+    }
+    .cv-container-icons{
+      height:40%;
+      overflow: auto;
+      width: 40%;
+      min-width: 180px;
+      margin:none;
+      padding-right:0px;
+    }
+    .cv-container-icon{
+      background-color: white;
+      margin:none;
+      padding:none;
+    }
+    .cv-container-icon>p:hover{
+      color:white
+    }
+    .cv-container-icon>p{
+      color: rgb(55, 55, 92);
+    }
+    .cv-container{
+      display:flex;
+      flex-direction: column;
+    }
+    .resume{
+      width:100%;
+    }
+    .resume> img{
+      width:60%;
+      margin-left:20%;
+      margin-right: 20%;
+      height:auto;
+      filter:brightness(40%);
+    }
+}
+
+@media screen and (max-width:400px){
+  .button-container2{
+    top:20%;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+  }
+  .cv-container-icons{
+    height:60%;
+    overflow: auto;
+    width: 40%;
+    min-width: 180px;
+    margin:none;
+    padding-right:0px;
+  }
 }
 
 /*-------------------TIMELINE CODE--------------------*/
@@ -678,3 +790,7 @@ body {
       text-align: right;
     }
   }
+
+  /*-------------Footer-------------*/
+
+  
