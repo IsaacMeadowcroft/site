@@ -370,7 +370,7 @@ body {
         display:flex;
         margin-left:auto;
         color:white;
-        font-size: 6vw;
+        font-size: 7vw;
     }
     .resume >img {
       height:200px;
@@ -396,11 +396,11 @@ body {
     }
 
     .name > p{
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .jenny{
-        width:30%;
+        width:50%;
     }
   }
   
@@ -436,7 +436,7 @@ body {
       height:70px;
     }
     .section > p{
-      font-size: 4vw;;
+      font-size: 4vw;
     }
     .section{
       height: 14vw;
@@ -453,12 +453,8 @@ body {
       display: flex;
       justify-content: center;
     }
-    .cv-text{
-      overflow: auto;
-    }
     .cv-container-icons{
       height:40%;
-      overflow: auto;
       width: 40%;
       min-width: 180px;
       margin:none;
@@ -481,12 +477,14 @@ body {
     }
     .resume{
       width:100%;
+  
     }
-    .resume> img{
+    .resume>img{
+      object-fit: contain;
       width:60%;
       margin-left:20%;
       margin-right: 20%;
-      height:auto;
+      height:100%;
       filter:brightness(40%);
     }
 }
