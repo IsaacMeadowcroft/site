@@ -59,6 +59,8 @@ $(window).on('resize', function (event) {
 });
 
 $(window).on('scroll', function () {
+    var x = document.getElementById("myTopnav");
+    x.className = "topnav";
     navSwitch();
 });
 

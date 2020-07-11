@@ -109,14 +109,6 @@ body {
       height:50%;
   }
 
-  .resume{
-      display:flex;
-      margin-left: auto;
-      margin-right: auto;;
-      margin-top: 20px;
-      width:60%;
-  }
-
   .about{
       height:100%;
       display:flex;
@@ -130,13 +122,13 @@ body {
     display:flex;
     flex-direction: column;
     align-items:center;
-    background-image: linear-gradient(to right, rgb(69, 69, 114),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
+    background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
   }
 
   .section{
       position:relative;
       width:100%;
-      height:90px;
+      height:7vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -153,7 +145,7 @@ body {
     top:0px;
     width:100%;
     height:100%;
-    background-image: linear-gradient(to right, rgb(69, 69, 114),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
+    background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
     /*box-shadow: 0 8px 8px 0px black inset;*/
   }
 
@@ -184,23 +176,55 @@ body {
   }
 
   .cv-container{
-    display: flex;
+      display: flex;
       justify-content: center;
-      width:30%;
+      width:94%;
       margin-left: auto;
       overflow: hidden;
       position:relative;
-      padding:0%;
+      padding:3%;
   }
 
-  .cv-container > img{
-    width:100%;
-    height:100%;
-    border-radius: 0px;
-    border:0px solid black;
-    background-color: rgb(23, 23, 63);
-    padding:0%;
-    filter: brightness(90%);
+  .cv-container-icon{
+    display: flex;
+    align-items: center;
+  }
+
+  .cv-container-icon div{
+    border: 1px solid black;
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+  }
+
+  .cv-container-icon div i{
+     padding:5%;
+     background-color: lightgrey;
+  }
+
+  .resume{
+     display:flex;
+     justify-content: flex-end;
+     margin-left: auto;
+     background-color: lightcoral;
+  }
+
+  .resume > img{
+    height:300px;
+    border:1px solid black;
+    border-radius: 7px;
+  }
+
+
+  .cv-text{
+      position: relative;
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: white;
+      width:100%;
+      font-family: 'Heebo', sans-serif;
+      background-color:white;
   }
 
   .glasses-container > img{
@@ -222,20 +246,6 @@ body {
     right:0;
   }
 
-  .cv-bio{
-    display:flex;
-    flex-direction: column;
-    position: absolute;
-    width:70%;
-    height:100%;
-    left:0;
-  }
-
-  .resume >iframe{
-    width:100%;
-    height:20vw;
-  }
-
   .info{
     font-size: 1.5vw;;
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -251,7 +261,7 @@ body {
       justify-content: space-around;
       bottom:0px;
       color:rgb(163, 144, 163);
-      background-image: linear-gradient(to right, rgb(69, 69, 114),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
+      background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
   }
 
   .icons > a{
@@ -313,17 +323,6 @@ body {
     font-size: 23px;
   }
 
-  .cd-timeline-content ul li{
-    color: rgba(255,255,255,0.7);
-    font-size: 12px;
-    padding: 5px 12px;
-  }
-
-  .cd-timeline-content ul li a{
-      color:white;
-  }
-
-  
   @media screen and (max-width: 600px) {
     .topnav a {display: none;}
     .topnav a.icon {
@@ -383,12 +382,6 @@ body {
     .topnav a{
         width:auto;
     }
-    .resume >iframe{
-        height:150vw;
-    }
-    .resume{
-        width:100%;
-    }
     .info{
         font-size: 2.5vw;;
     }
@@ -401,14 +394,34 @@ body {
     .section > p{
       font-size: 3vw;;
     }
+    .section{
+      height: 14vw;
+    }
 }
+
+/*-------------------TIMELINE CODE--------------------*/
+
+.timeline-content-info-title, .timeline-content-info-date {  
+  width: calc(50% - 2px);
+  display: inline-block;
+}
+
+  .cd-timeline-content ul li{
+    color: white;
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .cd-timeline-content ul li a{
+      color:white;
+  }
 
 /* Timeline Timeline Timeline Timeline */
 
 .cd-container {
     width: 100%;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgb(69, 69, 114),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
+    background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
   }
   .cd-container::after {
     content: '';
@@ -439,11 +452,40 @@ body {
     background: white;
   }
   @media only screen and (min-width: 770px) {
-    #cd-timeline {
-    }
     #cd-timeline::before {
       left: 50%;
       margin-left: -2px;
+    }
+  }
+
+  @media screen and (max-width: 950px){
+    .timeline-content-info {  
+      display: flex;
+      flex-direction: column;
+    } 
+    .timeline-content-info-title, .timeline-content-info-date {  
+      width: calc(100% - 2px);
+    }
+  }
+
+  @media screen and (max-width: 770px){
+    .timeline-content-info {  
+      display: flex;
+      flex-direction: row;
+      justify-content: stretch;
+    } 
+    .timeline-content-info-title,.timeline-content-info-date{
+      display: inline;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .timeline-content-info {  
+      display: flex;
+      flex-direction: column;
+    } 
+    .timeline-content-info-title, .timeline-content-info-date {  
+      width: calc(100% - 2px);
     }
   }
   
@@ -511,16 +553,12 @@ body {
   .cd-timeline-content .timeline-content-info {
     background: rgb(114, 99, 114);
     padding: 5px 10px;
-    color: rgba(255,255,255,0.7);
+    color: white;
     font-size: 12px;
     box-shadow:  inset 0 2px 0 rgba(0, 0, 0, 0.08);
     border-radius: 2px;
   }
 
-  .timeline-content-info-title, .timeline-content-info-date {  
-    width: calc(50% - 2px);
-    display: inline-block;
-  }
   @media (max-width: 500px) {
     .timeline-content-info-title, .timeline-content-info-date {  
       display: block;
