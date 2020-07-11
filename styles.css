@@ -329,18 +329,20 @@ body {
     .topnav a.icon {
         display:flex;
         margin-left:auto;
+        color:white;
+        font-size: 6vw;
     }
     
     .fab{
-        font-size:6vw;
+        font-size:8vw;
     }
 
-    .fab:hover{
-        color:grey;
+    .topnav a:first-child:hover{
+      background-color: white;
     }
 
     .topnav a.icon:hover {
-      background-color: white;
+      color: rgb(114, 99, 114);
     }
 
     .name{
@@ -361,14 +363,12 @@ body {
   
   @media screen and (max-width: 600px) {
     .topnav.responsive{
-        background-color: black;
+      background-color: white;
     }
+
     .topnav.responsive a {
       display: block;
-      color:white;
-    }
-    #myTopnav.topnav{
-      background-color: red;
+      color:black;
     }
     .topnav.responsive a:first-child{
         margin-left:auto;
@@ -376,8 +376,10 @@ body {
     .topnav {
         flex-direction: column;
         width:100%;
-        background-color: black;
+        background-color: transparent;
+        border: none;
     }
+    
     .topnav a{
         width:auto;
     }

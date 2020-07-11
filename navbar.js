@@ -3,10 +3,10 @@ topNav = document.getElementById("myTopnav");
 
 if ($(window).width() > 600 && $(this).scrollTop() < 100) {
     blackNav();
-} else {
+} else if ($(window).width() > 600){
     whiteNav();
+}else{
 }
-
 
 function toHome() {
     $(".topnav a").css("background-color", "transparent");
@@ -52,9 +52,9 @@ function whiteNav() {
 $(window).on('resize', function (event) {
     if ($(window).width() > 600 && $(this).scrollTop() < 100) {
         blackNav();
-    } else {
+    } else if ($(window).width() > 600){
         whiteNav();
-    }
+    } else {}
 });
 
 $(window).on('scroll', function () {
@@ -66,6 +66,18 @@ $(window).on('scroll', function () {
             blackNav();
             $(".topnav a").css("background-color", "transparent");
         }
+    }else{
+        scrollPosition = $(this).scrollTop();
+        if (scrollPosition >= 50) {
+            $(".topnav").css("background-color", "white");
+            $(".topnav a").css("color", "black");
+            topNav.style.borderBottom = "1px solid black";
+        }else{
+            $(".topnav").css("background-color", "transparent");
+            $(".topnav a").css("color", "white");
+            topNav.style.borderBottom = "none";
+        }
     }
 });
+
 
