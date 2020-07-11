@@ -1,28 +1,31 @@
 topNav = document.getElementById("myTopnav");
+navSwitch();
 
-
-if ($(window).width() > 600 && $(this).scrollTop() < 100) {
-    blackNav();
-} else if ($(window).width() > 600){
-    whiteNav();
-}else{
+function navSwitch() {
+    if ($(this).scrollTop() < 100) {
+        transNav();
+    } else {
+        whiteNav();
+    }
 }
 
 function toHome() {
-    $(".topnav a").css("background-color", "transparent");
-    $(".topnav a").css("color", "white");
+    transNav();
+    $("#home").css("background-color", "transparent");
 }
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className == "topnav") {
         x.className += " responsive";
+        whiteNav();
     } else {
         x.className = "topnav";
+        navSwitch();
     }
 }
 
-function blackNav() {
+function transNav() {
     $(".topnav a").css("color", "white");
     topNav.style.backgroundColor = "transparent";
     topNav.style.border = "none";
@@ -50,34 +53,13 @@ function whiteNav() {
 }
 
 $(window).on('resize', function (event) {
-    if ($(window).width() > 600 && $(this).scrollTop() < 100) {
-        blackNav();
-    } else if ($(window).width() > 600){
-        whiteNav();
-    } else {}
+    var x = document.getElementById("myTopnav");
+    x.className = "topnav";
+    navSwitch();
 });
 
 $(window).on('scroll', function () {
-    if ($(window).width() > 600) {
-        scrollPosition = $(this).scrollTop();
-        if (scrollPosition >= 100) {
-            whiteNav();
-        } else {
-            blackNav();
-            $(".topnav a").css("background-color", "transparent");
-        }
-    }else{
-        scrollPosition = $(this).scrollTop();
-        if (scrollPosition >= 50) {
-            $(".topnav").css("background-color", "white");
-            $(".topnav a").css("color", "black");
-            topNav.style.borderBottom = "1px solid black";
-        }else{
-            $(".topnav").css("background-color", "transparent");
-            $(".topnav a").css("color", "white");
-            topNav.style.borderBottom = "none";
-        }
-    }
+    navSwitch();
 });
 
 
