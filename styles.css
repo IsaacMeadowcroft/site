@@ -736,6 +736,7 @@ body {
   }
   
   @media only screen and (min-width: 768px) {
+    /*
     .cd-timeline-content h2 {
       font-size: 20px;
       font-size: 1.25rem;
@@ -749,6 +750,7 @@ body {
       font-size: 0.875rem;
     }
   }
+  */
   @media only screen and (min-width: 770px) {
     .cd-timeline-content {
       color: white;
@@ -768,8 +770,10 @@ body {
       width: 100%;
       left: 122%;
       top: 6px;
+      /*
       font-size: 16px;
       font-size: 1rem;
+      */
     }
     .cd-timeline-block:nth-child(even) .cd-timeline-content {
       float: right;
