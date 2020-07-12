@@ -36,6 +36,7 @@ function myFunction() {
 }
 
 function transNav() {
+    $(".topnav a").css("background-color", "transparent");
     $(".topnav a").css("color", "white");
     topNav.style.backgroundColor = "transparent";
     topNav.style.border = "none";
