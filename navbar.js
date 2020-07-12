@@ -1,5 +1,15 @@
 topNav = document.getElementById("myTopnav");
 navSwitch();
+switchLandingImage();
+
+
+function switchLandingImage(){
+    if($(window).width() <= 600){
+        $(".codes img").attr('src', 'code.jpg');
+    }else{
+        $(".codes img").attr('src', 'code2.jpg');
+    }
+}
 
 function navSwitch() {
     if ($(this).scrollTop() < 100) {
@@ -53,6 +63,7 @@ function whiteNav() {
 }
 
 $(window).on('resize', function (event) {
+    switchLandingImage();
     var x = document.getElementById("myTopnav");
     x.className = "topnav";
     navSwitch();
