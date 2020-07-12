@@ -2,6 +2,55 @@ topNav = document.getElementById("myTopnav");
 navSwitch();
 switchLandingImage();
 
+$(document).ready(function() {
+    $('#home-link').click(function(e) {
+      e.preventDefault();
+  
+      $('html, body').animate({
+        scrollTop: $('#land').offset().top
+      }, 500);
+    });
+  });
+
+  $(document).ready(function() {
+    $('#about-link').click(function(e) {
+      e.preventDefault();
+  
+      $('html, body').animate({
+        scrollTop: $('#about').offset().top - document.getElementById("myTopnav").clientHeight
+      }, 500);
+    });
+  });
+
+  $(document).ready(function() {
+    $('#experience-link').click(function(e) {
+      e.preventDefault();
+  
+      $('html, body').animate({
+        scrollTop: $('#experience').offset().top - document.getElementById("myTopnav").clientHeight
+      }, 500);
+    });
+  });
+
+  $(document).ready(function() {
+    $('#resume-link').click(function(e) {
+      e.preventDefault();
+  
+      $('html, body').animate({
+        scrollTop: $('#resume').offset().top - document.getElementById("myTopnav").clientHeight
+      }, 500);
+    });
+  });
+
+  $(document).ready(function() {
+    $('#contact-link').click(function(e) {
+      e.preventDefault();
+  
+      $('html, body').animate({
+        scrollTop: $('#contact').offset().top - document.getElementById("myTopnav").clientHeight
+      }, 500);
+    });
+  });
 
 function switchLandingImage(){
     if($(window).width() <= 600){
