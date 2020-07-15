@@ -92,7 +92,7 @@ function transNav() {
     $(".topnav a").hover(function () {
         $(".topnav a").css("color", "white");
         $(this).css("background-color", "transparent");
-        $(this).css("color", "rgb(114, 99, 114)");
+        $(this).css("color", "rgb(138, 122, 138)");
     });
     $(".topnav a").mouseout(function () {
         $(this).css("color", "white");
