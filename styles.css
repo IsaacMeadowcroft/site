@@ -408,6 +408,9 @@ body {
   }
 
   @media screen and (max-width: 600px) {
+    .bio{
+       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
     .topnav a {display: none;}
     .topnav a.icon {
         display:flex;
