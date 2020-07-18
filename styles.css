@@ -76,6 +76,8 @@ body {
   }
 
   .block{
+    border-top: rgb(143, 125, 143) 2px solid;
+    border-bottom: 2px  rgb(114, 99, 114) solid;
     position:absolute;
     bottom:0;
     width:100%;
