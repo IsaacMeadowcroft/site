@@ -90,6 +90,7 @@ function transNav() {
     topNav.style.backgroundColor = "transparent";
     topNav.style.border = "none";
     $(".topnav a").hover(function () {
+        $(this).css("animation", "bounce 1s");
         $(".topnav a").css("color", "white");
         $(this).css("background-color", "transparent");
         $(this).css("color", "rgb(138, 122, 138)");
@@ -104,6 +105,7 @@ function whiteNav() {
     topNav.style.borderBottom = "1px solid black";
     $(".topnav a").css("color", "black");
     $(".topnav a").hover(function () {
+        $(".topnav a").css("animation", "none");
         $(this).css("background-color", "lightgrey");
         $(".topnav a").css("color", "black");
     });
@@ -124,5 +126,7 @@ $(window).on('scroll', function () {
     x.className = "topnav";
     navSwitch();
 });
+
+
 
 

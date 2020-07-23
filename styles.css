@@ -31,8 +31,11 @@ body {
   .topnav a:hover {
     background-color: #ddd;
     color:black;
+    animation: bounce 1s; 
+    -webkit-animation: bounce 1s;
+    -moz-animation: bounce 1s;
+    -o-animation: bounce 1s;
   }
-  
   
   .topnav .icon {
     display: none;
@@ -58,7 +61,7 @@ body {
 
   .image-container{
     background-color: rgb(114, 99, 114);
-    border-top: 2px solid rgb(114, 99, 114);
+    border-top: 4px solid rgb(114, 99, 114);
     margin-left:0%;
     margin-right:0%;
     margin-top:0%;
@@ -96,6 +99,8 @@ body {
       max-height: 300px;
       z-index:5;
       filter:brightness(130%);
+      min-width:200px;
+      min-height:200px;
   }
 
   .name{
@@ -215,10 +220,15 @@ body {
     background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60));
   }
 
-  .cv-container-icon div{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  .cv-container-icon:hover {
+    animation: bounce 500ms; 
+    -webkit-animation: bounce 500ms;
+    -moz-animation: bounce 500ms;
+    -o-animation: bounce 500ms;
+ }
+
+  .cv-container-icon > div{
+    text-align: center;
     border-radius: 50%;
     width:30px;
     height:30px;
@@ -226,8 +236,10 @@ body {
   }
 
   .cv-container-icon div i{
-     color:white;
-     padding:5%;
+    position:relative;
+    top: calc(45% - 10px);
+    color:white;
+    padding:5%;
   }
 
   .cv-container-icon > p{
@@ -405,7 +417,6 @@ body {
   .footer{
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     background-color: rgb(114, 99, 114);
-    height:50vh;
     display:grid;
     width:100%;
     padding-top: 3%;
@@ -416,10 +427,16 @@ body {
   .footer-bio {
     margin-top: 2%;;
     display:grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     width:100%;
+    color:white;
     height:auto;
+    margin-bottom: 10vh;
+  }
+
+  .footer-inner{
+    width:auto;
   }
 
   .footer-container{
@@ -433,9 +450,88 @@ body {
     border-right: 1px solid white;
   }
 
+  .footer-about-text{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     font-family: 'Open Sans', sans-serif;
+     word-wrap: break-word;
+  }
+
+  .social-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
+  .social-wrap > p{
+    margin-left: 15px;
+    display: inline-block;
+    word-break: break-word;
+  }
+
+  .icon-wrap{
+    height:27px;
+    width:27px;
+    min-width:27px;
+    background-color:rgb(114, 99, 114);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-wrap > i, .social-icon-wrap >i {
+    padding:5px;
+  }
+
+  .footer-icon-wrap{
+    height:27px;
+    width:27px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .footer-icon-wrap{
+    font-size: 27px;
+  }
+
+  .footer-social-wrap{
+    text-decoration: none;
+    color:white;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-social-wrap:hover{
+    color:rgb(141, 124, 141);
+    animation: bounce 500ms; 
+    -webkit-animation: bounce 500ms;
+    -moz-animation: bounce 500ms;
+    -o-animation: bounce 500ms;
+  }
+
+  .footer-social-wrap > p{
+    margin-left: 15px;
+    display: inline-block;
+    word-break: break-word;
+  }
+
   @media screen and (max-width: 600px) {
     .bio{
        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .footer-bio{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .footer-bio > div:not(:last-child){
+      border: none;
+      margin-bottom: 10vh;
     }
     .topnav a {display: none;}
     .topnav a.icon {
@@ -448,7 +544,7 @@ body {
       height:200px;
     }
     
-    .fab{
+    .icons > a > .fab{
         font-size:8vw;
     }
 
@@ -578,6 +674,43 @@ body {
     min-width: 180px;
     margin:none;
     padding-right:0px;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%,  
+  100% {
+     -webkit-transform: translateY(0);
+  } 
+  50% {
+      -webkit-transform: translateY(-4px);
+  }
+}
+@-moz-keyframes bounce {
+  0%, 
+  100% {
+     -moz-transform: translateY(0);
+  }
+  50% {
+     -moz-transform: translateY(-4px);
+  }
+}
+@-o-keyframes bounce {
+  0%,
+  100% {
+     -o-transform: translateY(0);
+  }
+  50% {
+     -o-transform: translateY(-4px);
+  }
+}
+@keyframes bounce {
+  0%,  
+  100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-4px);
   }
 }
 
