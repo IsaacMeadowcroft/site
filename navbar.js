@@ -60,6 +60,14 @@ function switchLandingImage(){
     }
 }
 
+window.onresize = function(){
+  if($(window).width() <= 600){
+      $(".codes img").attr('src', 'code.jpg');
+  }else{
+      $(".codes img").attr('src', 'code2.jpg');
+  }
+}
+
 function navSwitch() {
     if ($(this).scrollTop() < 100) {
         transNav();
