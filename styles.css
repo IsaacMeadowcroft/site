@@ -31,10 +31,10 @@ body {
   .topnav a:hover {
     background-color: #ddd;
     color:black;
-    animation: bounce 500ms; 
-    -webkit-animation: bounce 500ms;
-    -moz-animation: bounce 500ms;
-    -o-animation: bounce 500ms;
+    animation: bounce 1s;
+    -webkit-animation: bounce 1s;
+    -moz-animation: bounce 1s;
+    -o-animation: bounce 1s;
   }
   
   .topnav .icon {
@@ -98,7 +98,7 @@ body {
       max-width: 300px;
       max-height: 300px;
       z-index:5;
-      filter:brightness(130%);
+      filter:brightness(130%) sepia(10%);
       min-width:200px;
       min-height:200px;
   }
@@ -221,7 +221,7 @@ body {
   }
 
   .cv-container-icon:hover {
-    animation: bounce 500ms; 
+    animation: bounce 500ms linear forwards; 
     -webkit-animation: bounce 500ms;
     -moz-animation: bounce 500ms;
     -o-animation: bounce 500ms;
@@ -232,7 +232,6 @@ body {
     border-radius: 50%;
     width:30px;
     height:30px;
-    background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60));
   }
 
   .cv-container-icon div i{
@@ -278,7 +277,6 @@ body {
   .glasses-container > img{
       width:100%;
       height:100%;
-      border-radius: 0px;
       border:0px solid black;
       background-color: rgb(23, 23, 63);
       padding:0%;
@@ -319,52 +317,6 @@ body {
   .about-text{
     padding: 8%;
     font-family: 'Open Sans', sans-serif;
-  }
-
-  .about-container > p{
-  }
-
-  .why-the-site{
-  }
-
-  .my-goals{
-  }
-
-  .info{
-    font-size: 1.5vw;;
-    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    padding:5%;
-  }
-
-  .icons{
-      width:100%;
-      display: flex;
-      padding-top: 3%;
-      padding-bottom: 3%;
-      border-bottom: 8px solid rgb(114, 99, 114);
-      justify-content: space-around;
-      bottom:0px;
-      color:rgb(163, 144, 163);
-      background-image: linear-gradient(to right, rgb(55, 55, 92),rgb(40, 36, 60),rgb(40, 36, 60),rgb(40, 36, 60));
-  }
-
-  .icons > a{
-    color: inherit;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration:none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3vh;
-  }
-
-  .icons > a > i {
-    font-size:10vw;
-  }
-
-  .icons > a:hover{
-    color:white;
   }
 
   .job-wrapper{
@@ -420,7 +372,7 @@ body {
     display:grid;
     width:100%;
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 1px;
     color:white;
   }
 
@@ -524,6 +476,7 @@ body {
   }
 
   @media screen and (max-width: 600px) {
+
     .bio{
        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
@@ -632,15 +585,21 @@ body {
       padding-right:0px;
     }
     .cv-container-icon{
-      background-color: white;
       margin:none;
       padding:none;
+      background-color:white;
     }
-    .cv-container-icon>p:hover{
-      color:white
+
+    .cv-container-icon > p{
+      color:rgb(0, 0, 0);
     }
-    .cv-container-icon>p{
-      color: rgb(55, 55, 92);
+
+    .cv-container-icon > div> i{
+      color:black;
+    }
+
+    .cv-container-icon:hover{
+      background-image:none;
     }
     .cv-container{
       display:flex;
@@ -948,30 +907,14 @@ body {
     border: 7px solid transparent;
     border-right: 7px solid rgb(114, 99, 114);
   }
-  
-  @media only screen and (min-width: 768px) {
-    /*
-    .cd-timeline-content h2 {
-      font-size: 20px;
-      font-size: 1.25rem;
-    }
-    .cd-timeline-content p {
-      font-size: 16px;
-      font-size: 1rem;
-    }
-    .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-      font-size: 14px;
-      font-size: 0.875rem;
-    }
-  }
-  */
+
   @media only screen and (min-width: 770px) {
     .cd-timeline-content {
       color: white;
       margin-left: 0;
       padding: 1.6em;
       width: 36%;
-      margin: 0 5%
+      margin: 0 3%
     }
     .cd-timeline-content::before {
       top: 24px;

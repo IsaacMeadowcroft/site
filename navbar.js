@@ -85,12 +85,12 @@ function myFunction() {
 }
 
 function transNav() {
+    $(".topnav a").css("animation-play-state", "running");
     $(".topnav a").css("background-color", "transparent");
     $(".topnav a").css("color", "white");
     topNav.style.backgroundColor = "transparent";
     topNav.style.border = "none";
     $(".topnav a").hover(function () {
-        $(this).css("animation", "bounce 1s");
         $(".topnav a").css("color", "white");
         $(this).css("background-color", "transparent");
         $(this).css("color", "rgb(138, 122, 138)");
@@ -101,11 +101,11 @@ function transNav() {
 }
 
 function whiteNav() {
+  $(".topnav a").css("animation-play-state", "paused");
     topNav.style.backgroundColor = "white";
     topNav.style.borderBottom = "1px solid black";
     $(".topnav a").css("color", "black");
     $(".topnav a").hover(function () {
-        $(".topnav a").css("animation", "none");
         $(this).css("background-color", "lightgrey");
         $(".topnav a").css("color", "black");
     });
