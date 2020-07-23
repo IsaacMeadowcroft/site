@@ -31,10 +31,10 @@ body {
   .topnav a:hover {
     background-color: #ddd;
     color:black;
-    animation: bounce 1s; 
-    -webkit-animation: bounce 1s;
-    -moz-animation: bounce 1s;
-    -o-animation: bounce 1s;
+    animation: bounce 500ms; 
+    -webkit-animation: bounce 500ms;
+    -moz-animation: bounce 500ms;
+    -o-animation: bounce 500ms;
   }
   
   .topnav .icon {
@@ -444,6 +444,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom:5%;
   }
 
   .footer-bio > div:not(:last-child){
@@ -569,6 +570,8 @@ body {
 
     .jenny{
         width:50%;
+        min-width:0px;
+        min-height:0px;
     }
   }
   
@@ -802,6 +805,11 @@ body {
     } 
     .timeline-content-info-title, .timeline-content-info-date {  
       width: calc(100% - 2px);
+    }
+    .cd-timeline-content > ul{
+      padding-inline-start: 20px;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
     }
   }
   
